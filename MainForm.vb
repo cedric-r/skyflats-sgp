@@ -468,7 +468,7 @@ Public Class MainForm
 
         Dim binning As Integer
         Dim exptime As Single
-        Dim timeout As Double = 30
+        Dim timeout As Double = 60
         Dim meanADU As Integer
         Dim targetADU As Integer
         Dim filename As String
@@ -754,7 +754,7 @@ Public Class MainForm
         Dim response As String
         Dim error_message As String
 
-        Dim timeout As Double = 30
+        Dim timeout As Double = 60
         Dim meanADU As Double
 
 
