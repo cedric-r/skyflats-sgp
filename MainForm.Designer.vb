@@ -165,9 +165,9 @@ Partial Class MainForm
         Me.GroupBox_Status.Controls.Add(Me.Label2)
         Me.GroupBox_Status.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_Status.Location = New System.Drawing.Point(0, 23)
-        Me.GroupBox_Status.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_Status.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_Status.Name = "GroupBox_Status"
-        Me.GroupBox_Status.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_Status.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_Status.Size = New System.Drawing.Size(216, 64)
         Me.GroupBox_Status.TabIndex = 21
         Me.GroupBox_Status.TabStop = False
@@ -189,9 +189,9 @@ Partial Class MainForm
         Me.GroupBox_Mount.Controls.Add(Me.Label4)
         Me.GroupBox_Mount.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_Mount.Location = New System.Drawing.Point(0, 87)
-        Me.GroupBox_Mount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_Mount.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_Mount.Name = "GroupBox_Mount"
-        Me.GroupBox_Mount.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_Mount.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_Mount.Size = New System.Drawing.Size(216, 105)
         Me.GroupBox_Mount.TabIndex = 26
         Me.GroupBox_Mount.TabStop = False
@@ -240,7 +240,7 @@ Partial Class MainForm
         'Button_MountSlew
         '
         Me.Button_MountSlew.Location = New System.Drawing.Point(101, 19)
-        Me.Button_MountSlew.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_MountSlew.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_MountSlew.Name = "Button_MountSlew"
         Me.Button_MountSlew.Size = New System.Drawing.Size(50, 21)
         Me.Button_MountSlew.TabIndex = 21
@@ -251,7 +251,7 @@ Partial Class MainForm
         '
         Me.CheckBox_Mount.Appearance = System.Windows.Forms.Appearance.Button
         Me.CheckBox_Mount.Location = New System.Drawing.Point(15, 19)
-        Me.CheckBox_Mount.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBox_Mount.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox_Mount.Name = "CheckBox_Mount"
         Me.CheckBox_Mount.Size = New System.Drawing.Size(76, 21)
         Me.CheckBox_Mount.TabIndex = 31
@@ -404,7 +404,7 @@ Partial Class MainForm
         Me.CheckBox_LogWindow.Appearance = System.Windows.Forms.Appearance.Button
         Me.CheckBox_LogWindow.AutoSize = True
         Me.CheckBox_LogWindow.Location = New System.Drawing.Point(6, 109)
-        Me.CheckBox_LogWindow.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBox_LogWindow.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox_LogWindow.Name = "CheckBox_LogWindow"
         Me.CheckBox_LogWindow.Size = New System.Drawing.Size(65, 23)
         Me.CheckBox_LogWindow.TabIndex = 19
@@ -468,9 +468,9 @@ Partial Class MainForm
         Me.GroupBox_FlatStatus.Controls.Add(Me.Label6)
         Me.GroupBox_FlatStatus.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox_FlatStatus.Location = New System.Drawing.Point(0, 299)
-        Me.GroupBox_FlatStatus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_FlatStatus.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_FlatStatus.Name = "GroupBox_FlatStatus"
-        Me.GroupBox_FlatStatus.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_FlatStatus.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_FlatStatus.Size = New System.Drawing.Size(216, 139)
         Me.GroupBox_FlatStatus.TabIndex = 22
         Me.GroupBox_FlatStatus.TabStop = False
@@ -479,7 +479,7 @@ Partial Class MainForm
         'Button_Start
         '
         Me.Button_Start.Location = New System.Drawing.Point(78, 20)
-        Me.Button_Start.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_Start.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_Start.Name = "Button_Start"
         Me.Button_Start.Size = New System.Drawing.Size(54, 21)
         Me.Button_Start.TabIndex = 6
@@ -489,7 +489,7 @@ Partial Class MainForm
         'Button_Setup
         '
         Me.Button_Setup.Location = New System.Drawing.Point(13, 20)
-        Me.Button_Setup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_Setup.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_Setup.Name = "Button_Setup"
         Me.Button_Setup.Size = New System.Drawing.Size(52, 21)
         Me.Button_Setup.TabIndex = 8
@@ -499,7 +499,7 @@ Partial Class MainForm
         'Button_Abort
         '
         Me.Button_Abort.Location = New System.Drawing.Point(144, 20)
-        Me.Button_Abort.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_Abort.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_Abort.Name = "Button_Abort"
         Me.Button_Abort.Size = New System.Drawing.Size(54, 21)
         Me.Button_Abort.TabIndex = 20
@@ -574,9 +574,9 @@ Partial Class MainForm
         Me.GroupBox_FlatSequencer.Controls.Add(Me.Button_Start)
         Me.GroupBox_FlatSequencer.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_FlatSequencer.Location = New System.Drawing.Point(0, 192)
-        Me.GroupBox_FlatSequencer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_FlatSequencer.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_FlatSequencer.Name = "GroupBox_FlatSequencer"
-        Me.GroupBox_FlatSequencer.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_FlatSequencer.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_FlatSequencer.Size = New System.Drawing.Size(216, 107)
         Me.GroupBox_FlatSequencer.TabIndex = 25
         Me.GroupBox_FlatSequencer.TabStop = False
@@ -723,10 +723,10 @@ Partial Class MainForm
         Me.Controls.Add(Me.MenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "MainForm"
-        Me.Text = "SkyFlats SGP v1.0 ET"
+        Me.Text = "SkyFlats SGP v1.0 ET 0.1"
         Me.GroupBox_Status.ResumeLayout(False)
         Me.GroupBox_Status.PerformLayout()
         Me.GroupBox_Mount.ResumeLayout(False)

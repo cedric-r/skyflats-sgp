@@ -10,7 +10,7 @@ Imports nom.tam.util
 
 Public Class MainForm
     'Version
-    Dim ProgVersion As String = "SkyFlats SGP v1.0"
+    Dim ProgVersion As String = "SkyFlats SGP v1.0 ET 0.1"
 
     'SGP comm
     Dim SGPurl As String = "http://localhost:59590/" 'default http://localhost:59590/  this is saved into the json settings file, but cannot be changed in the program altough it can be changed in the file
@@ -463,12 +463,12 @@ Public Class MainForm
         Dim MaxExp As Double
         Dim MinADU As Double
         Dim MaxADU As Double
+        Dim Timeout As Double
         Dim framesize As Integer
         Dim Nframes As Integer
 
         Dim binning As Integer
         Dim exptime As Single
-        Dim timeout As Double = 60
         Dim meanADU As Integer
         Dim targetADU As Integer
         Dim filename As String
@@ -481,6 +481,7 @@ Public Class MainForm
         MaxExp = Settings.MaxExp
         MinADU = Settings.MinADU
         MaxADU = Settings.MaxADU
+        Timeout = Settings.Timeout
         Nframes = Settings.NumFrames
 
         'set TARGET adu
@@ -489,6 +490,7 @@ Public Class MainForm
         'print some settings to log window
         Logging("Min ADU: " + Settings.MinADU.ToString)
         Logging("Max ADU: " + Settings.MaxADU.ToString)
+        Logging("Timeout: " + Settings.Timeout.ToString)
         Logging("Target ADU: " + targetADU.ToString)
         Logging("Min Exposure Time: " + Settings.MinExp.ToString + "s")
         Logging("Max Exposure Time: " + Settings.MaxExp.ToString + "s")
@@ -533,7 +535,7 @@ Public Class MainForm
                 'ENTER FLAT FRAME EXPOSURE CALIBRATION LOOP
                 stopExpTimeSearch = False
                 Do
-                    meanADU = TakeFlatFrame(exptime, binning, framesize, filepath)
+                    meanADU = TakeFlatFrame(exptime, binning, framesize, filepath, Timeout)
                     If meanADU < 0 Then
                         Logging("Aborting flat sequence (Error code " + meanADU.ToString + ").")
                         Exit Sub
@@ -609,7 +611,7 @@ Public Class MainForm
                     framesize = 1
 
                     'take Filter flat frame
-                    meanADU = TakeFlatFrame(exptime, binning, framesize, filepath)
+                    meanADU = TakeFlatFrame(exptime, binning, framesize, filepath, Timeout)
                     If meanADU < 0 Then
                         Logging("Aborting flat sequence (Error code " + meanADU.ToString + ").")
                         Exit Sub
@@ -749,12 +751,11 @@ Public Class MainForm
         Return ""
     End Function
 
-    Public Function TakeFlatFrame(ByVal exptime As Single, ByVal binning As Integer, ByVal framesize As Integer, ByVal filepath As String) As Double
+    Public Function TakeFlatFrame(ByVal exptime As Single, ByVal binning As Integer, ByVal framesize As Integer, ByVal filepath As String, ByVal timeout As Double) As Double
         Dim SGPreturn As New SGPClass.SGPresponse
         Dim response As String
         Dim error_message As String
 
-        Dim timeout As Double = 60
         Dim meanADU As Double
 
 

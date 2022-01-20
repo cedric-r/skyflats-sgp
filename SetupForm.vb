@@ -43,6 +43,7 @@ Public Class SetupForm
         TextBox_CamMaxExp.Text = MainForm.Settings.MaxExp.ToString
         TextBox_CamMinADU.Text = MainForm.Settings.MinADU.ToString
         TextBox_CamMaxADU.Text = MainForm.Settings.MaxADU.ToString
+        TextBox_CamTimeout.Text = MainForm.Settings.Timeout.ToString
         DropDownList_FrameSize.SelectedIndex = MainForm.Settings.FrameSize
         TextBox_CamFrames.Text = MainForm.Settings.NumFrames
         CheckBox_AutoAdjustExpTime.Checked = MainForm.Settings.AutoAdjust
@@ -235,6 +236,7 @@ Public Class SetupForm
         MainForm.Settings.MaxExp = MainForm.String2Double(TextBox_CamMaxExp.Text)
         MainForm.Settings.MinADU = MainForm.String2Double(TextBox_CamMinADU.Text)
         MainForm.Settings.MaxADU = MainForm.String2Double(TextBox_CamMaxADU.Text)
+        MainForm.Settings.Timeout = MainForm.String2Double(TextBox_CamTimeout.Text)
         MainForm.Settings.FrameSize = DropDownList_FrameSize.SelectedIndex
 
         'Copy filer list to settings

@@ -19,6 +19,8 @@
     Public Property MaxExp As Double
     Public Property MinADU As Double
     Public Property MaxADU As Double
+
+    Public Property Timeout As Double
     Public Property FrameSize As Integer
     Public Property NumFrames As Integer
     Public Property AutoAdjust As Boolean
