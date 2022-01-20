@@ -49,6 +49,8 @@ Partial Class SetupForm
         Me.RadioButton_Mount1 = New System.Windows.Forms.RadioButton()
         Me.CheckBox_MountTracking = New System.Windows.Forms.CheckBox()
         Me.GroupBox_CameraSettings = New System.Windows.Forms.GroupBox()
+        Me.TextBox_CamTimeout = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.DropDownList_FrameSize = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.CheckBox_AutoAdjustExpTime = New System.Windows.Forms.CheckBox()
@@ -75,8 +77,6 @@ Partial Class SetupForm
         Me.GroupBox_OKCancel = New System.Windows.Forms.GroupBox()
         Me.Button_Cancel = New System.Windows.Forms.Button()
         Me.Button_OK = New System.Windows.Forms.Button()
-        Me.TextBox_CamTimeout = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.GroupBox_GeneralSettings.SuspendLayout()
         Me.GroupBox_MountSettings.SuspendLayout()
         Me.GroupBox_CameraSettings.SuspendLayout()
@@ -99,9 +99,9 @@ Partial Class SetupForm
         Me.GroupBox_GeneralSettings.Controls.Add(Me.Label14)
         Me.GroupBox_GeneralSettings.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_GeneralSettings.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox_GeneralSettings.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_GeneralSettings.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_GeneralSettings.Name = "GroupBox_GeneralSettings"
-        Me.GroupBox_GeneralSettings.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_GeneralSettings.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_GeneralSettings.Size = New System.Drawing.Size(441, 115)
         Me.GroupBox_GeneralSettings.TabIndex = 0
         Me.GroupBox_GeneralSettings.TabStop = False
@@ -120,7 +120,7 @@ Partial Class SetupForm
         'TextBox_StartDelay
         '
         Me.TextBox_StartDelay.Location = New System.Drawing.Point(68, 89)
-        Me.TextBox_StartDelay.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox_StartDelay.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox_StartDelay.Name = "TextBox_StartDelay"
         Me.TextBox_StartDelay.Size = New System.Drawing.Size(46, 20)
         Me.TextBox_StartDelay.TabIndex = 14
@@ -160,7 +160,7 @@ Partial Class SetupForm
         'TextBox_GeneralLON
         '
         Me.TextBox_GeneralLON.Location = New System.Drawing.Point(216, 62)
-        Me.TextBox_GeneralLON.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox_GeneralLON.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox_GeneralLON.Name = "TextBox_GeneralLON"
         Me.TextBox_GeneralLON.Size = New System.Drawing.Size(36, 20)
         Me.TextBox_GeneralLON.TabIndex = 16
@@ -171,7 +171,7 @@ Partial Class SetupForm
         Me.TextBox_SaveDir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_SaveDir.Location = New System.Drawing.Point(99, 34)
-        Me.TextBox_SaveDir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_SaveDir.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_SaveDir.Name = "TextBox_SaveDir"
         Me.TextBox_SaveDir.Size = New System.Drawing.Size(338, 20)
         Me.TextBox_SaveDir.TabIndex = 1
@@ -200,7 +200,7 @@ Partial Class SetupForm
         'TextBox_GeneralLAT
         '
         Me.TextBox_GeneralLAT.Location = New System.Drawing.Point(116, 62)
-        Me.TextBox_GeneralLAT.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox_GeneralLAT.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox_GeneralLAT.Name = "TextBox_GeneralLAT"
         Me.TextBox_GeneralLAT.Size = New System.Drawing.Size(36, 20)
         Me.TextBox_GeneralLAT.TabIndex = 14
@@ -233,9 +233,9 @@ Partial Class SetupForm
         Me.GroupBox_MountSettings.Controls.Add(Me.CheckBox_MountTracking)
         Me.GroupBox_MountSettings.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_MountSettings.Location = New System.Drawing.Point(0, 115)
-        Me.GroupBox_MountSettings.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_MountSettings.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_MountSettings.Name = "GroupBox_MountSettings"
-        Me.GroupBox_MountSettings.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_MountSettings.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_MountSettings.Size = New System.Drawing.Size(441, 157)
         Me.GroupBox_MountSettings.TabIndex = 1
         Me.GroupBox_MountSettings.TabStop = False
@@ -255,7 +255,7 @@ Partial Class SetupForm
         'TextBox_MountAZ
         '
         Me.TextBox_MountAZ.Location = New System.Drawing.Point(240, 50)
-        Me.TextBox_MountAZ.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox_MountAZ.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox_MountAZ.Name = "TextBox_MountAZ"
         Me.TextBox_MountAZ.Size = New System.Drawing.Size(36, 20)
         Me.TextBox_MountAZ.TabIndex = 11
@@ -275,7 +275,7 @@ Partial Class SetupForm
         'TextBox_MountALT
         '
         Me.TextBox_MountALT.Location = New System.Drawing.Point(172, 50)
-        Me.TextBox_MountALT.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox_MountALT.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox_MountALT.Name = "TextBox_MountALT"
         Me.TextBox_MountALT.Size = New System.Drawing.Size(36, 20)
         Me.TextBox_MountALT.TabIndex = 9
@@ -307,7 +307,7 @@ Partial Class SetupForm
         Me.DropDownList_Mounts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.DropDownList_Mounts.FormattingEnabled = True
         Me.DropDownList_Mounts.Location = New System.Drawing.Point(99, 21)
-        Me.DropDownList_Mounts.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DropDownList_Mounts.Margin = New System.Windows.Forms.Padding(2)
         Me.DropDownList_Mounts.Name = "DropDownList_Mounts"
         Me.DropDownList_Mounts.Size = New System.Drawing.Size(228, 21)
         Me.DropDownList_Mounts.TabIndex = 6
@@ -316,7 +316,7 @@ Partial Class SetupForm
         '
         Me.RadioButton_mount4.AutoSize = True
         Me.RadioButton_mount4.Location = New System.Drawing.Point(8, 105)
-        Me.RadioButton_mount4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton_mount4.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton_mount4.Name = "RadioButton_mount4"
         Me.RadioButton_mount4.Size = New System.Drawing.Size(79, 17)
         Me.RadioButton_mount4.TabIndex = 5
@@ -327,7 +327,7 @@ Partial Class SetupForm
         '
         Me.RadioButton_Mount3.AutoSize = True
         Me.RadioButton_Mount3.Location = New System.Drawing.Point(8, 87)
-        Me.RadioButton_Mount3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton_Mount3.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton_Mount3.Name = "RadioButton_Mount3"
         Me.RadioButton_Mount3.Size = New System.Drawing.Size(93, 17)
         Me.RadioButton_Mount3.TabIndex = 3
@@ -338,7 +338,7 @@ Partial Class SetupForm
         '
         Me.RadioButton_Mount2.AutoSize = True
         Me.RadioButton_Mount2.Location = New System.Drawing.Point(8, 69)
-        Me.RadioButton_Mount2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton_Mount2.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton_Mount2.Name = "RadioButton_Mount2"
         Me.RadioButton_Mount2.Size = New System.Drawing.Size(193, 17)
         Me.RadioButton_Mount2.TabIndex = 2
@@ -350,7 +350,7 @@ Partial Class SetupForm
         Me.RadioButton_Mount1.AutoSize = True
         Me.RadioButton_Mount1.Checked = True
         Me.RadioButton_Mount1.Location = New System.Drawing.Point(8, 50)
-        Me.RadioButton_Mount1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButton_Mount1.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton_Mount1.Name = "RadioButton_Mount1"
         Me.RadioButton_Mount1.Size = New System.Drawing.Size(131, 17)
         Me.RadioButton_Mount1.TabIndex = 1
@@ -364,7 +364,7 @@ Partial Class SetupForm
         Me.CheckBox_MountTracking.Checked = True
         Me.CheckBox_MountTracking.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox_MountTracking.Location = New System.Drawing.Point(8, 129)
-        Me.CheckBox_MountTracking.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBox_MountTracking.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox_MountTracking.Name = "CheckBox_MountTracking"
         Me.CheckBox_MountTracking.Size = New System.Drawing.Size(177, 17)
         Me.CheckBox_MountTracking.TabIndex = 0
@@ -390,20 +390,39 @@ Partial Class SetupForm
         Me.GroupBox_CameraSettings.Controls.Add(Me.Label2)
         Me.GroupBox_CameraSettings.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_CameraSettings.Location = New System.Drawing.Point(0, 272)
-        Me.GroupBox_CameraSettings.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_CameraSettings.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_CameraSettings.Name = "GroupBox_CameraSettings"
-        Me.GroupBox_CameraSettings.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_CameraSettings.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_CameraSettings.Size = New System.Drawing.Size(441, 198)
         Me.GroupBox_CameraSettings.TabIndex = 2
         Me.GroupBox_CameraSettings.TabStop = False
         Me.GroupBox_CameraSettings.Text = "Camera settings"
+        '
+        'TextBox_CamTimeout
+        '
+        Me.TextBox_CamTimeout.Location = New System.Drawing.Point(117, 174)
+        Me.TextBox_CamTimeout.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox_CamTimeout.Name = "TextBox_CamTimeout"
+        Me.TextBox_CamTimeout.Size = New System.Drawing.Size(62, 20)
+        Me.TextBox_CamTimeout.TabIndex = 12
+        Me.TextBox_CamTimeout.Text = "60"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(69, 177)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(45, 13)
+        Me.Label18.TabIndex = 11
+        Me.Label18.Text = "Timeout"
         '
         'DropDownList_FrameSize
         '
         Me.DropDownList_FrameSize.FormattingEnabled = True
         Me.DropDownList_FrameSize.Items.AddRange(New Object() {"Full", "Half", "Third", "Quarter"})
         Me.DropDownList_FrameSize.Location = New System.Drawing.Point(118, 104)
-        Me.DropDownList_FrameSize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DropDownList_FrameSize.Margin = New System.Windows.Forms.Padding(2)
         Me.DropDownList_FrameSize.Name = "DropDownList_FrameSize"
         Me.DropDownList_FrameSize.Size = New System.Drawing.Size(62, 21)
         Me.DropDownList_FrameSize.TabIndex = 10
@@ -411,7 +430,7 @@ Partial Class SetupForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(5, 107)
+        Me.Label7.Location = New System.Drawing.Point(6, 107)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(106, 13)
@@ -424,7 +443,7 @@ Partial Class SetupForm
         Me.CheckBox_AutoAdjustExpTime.Checked = True
         Me.CheckBox_AutoAdjustExpTime.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox_AutoAdjustExpTime.Location = New System.Drawing.Point(194, 135)
-        Me.CheckBox_AutoAdjustExpTime.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBox_AutoAdjustExpTime.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox_AutoAdjustExpTime.Name = "CheckBox_AutoAdjustExpTime"
         Me.CheckBox_AutoAdjustExpTime.Size = New System.Drawing.Size(194, 17)
         Me.CheckBox_AutoAdjustExpTime.TabIndex = 5
@@ -434,7 +453,7 @@ Partial Class SetupForm
         'TextBox_CamFrames
         '
         Me.TextBox_CamFrames.Location = New System.Drawing.Point(118, 134)
-        Me.TextBox_CamFrames.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_CamFrames.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_CamFrames.Name = "TextBox_CamFrames"
         Me.TextBox_CamFrames.Size = New System.Drawing.Size(62, 20)
         Me.TextBox_CamFrames.TabIndex = 8
@@ -443,7 +462,7 @@ Partial Class SetupForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(56, 136)
+        Me.Label6.Location = New System.Drawing.Point(54, 137)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(58, 13)
@@ -453,7 +472,7 @@ Partial Class SetupForm
         'TextBox_CamMaxADU
         '
         Me.TextBox_CamMaxADU.Location = New System.Drawing.Point(118, 74)
-        Me.TextBox_CamMaxADU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_CamMaxADU.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_CamMaxADU.Name = "TextBox_CamMaxADU"
         Me.TextBox_CamMaxADU.Size = New System.Drawing.Size(62, 20)
         Me.TextBox_CamMaxADU.TabIndex = 6
@@ -462,7 +481,7 @@ Partial Class SetupForm
         'TextBox_CamMinADU
         '
         Me.TextBox_CamMinADU.Location = New System.Drawing.Point(118, 56)
-        Me.TextBox_CamMinADU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_CamMinADU.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_CamMinADU.Name = "TextBox_CamMinADU"
         Me.TextBox_CamMinADU.Size = New System.Drawing.Size(62, 20)
         Me.TextBox_CamMinADU.TabIndex = 5
@@ -471,7 +490,7 @@ Partial Class SetupForm
         'TextBox_CamMaxExp
         '
         Me.TextBox_CamMaxExp.Location = New System.Drawing.Point(118, 38)
-        Me.TextBox_CamMaxExp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_CamMaxExp.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_CamMaxExp.Name = "TextBox_CamMaxExp"
         Me.TextBox_CamMaxExp.Size = New System.Drawing.Size(62, 20)
         Me.TextBox_CamMaxExp.TabIndex = 4
@@ -480,7 +499,7 @@ Partial Class SetupForm
         'TextBox_CamMinExp
         '
         Me.TextBox_CamMinExp.Location = New System.Drawing.Point(118, 20)
-        Me.TextBox_CamMinExp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox_CamMinExp.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox_CamMinExp.Name = "TextBox_CamMinExp"
         Me.TextBox_CamMinExp.Size = New System.Drawing.Size(62, 20)
         Me.TextBox_CamMinExp.TabIndex = 2
@@ -489,7 +508,7 @@ Partial Class SetupForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(34, 76)
+        Me.Label5.Location = New System.Drawing.Point(30, 77)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 13)
@@ -499,7 +518,7 @@ Partial Class SetupForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(38, 58)
+        Me.Label4.Location = New System.Drawing.Point(33, 59)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 13)
@@ -535,9 +554,9 @@ Partial Class SetupForm
         Me.GroupBox_FilterSettings.Controls.Add(Me.ListView_Filters)
         Me.GroupBox_FilterSettings.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox_FilterSettings.Location = New System.Drawing.Point(0, 470)
-        Me.GroupBox_FilterSettings.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox_FilterSettings.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox_FilterSettings.Name = "GroupBox_FilterSettings"
-        Me.GroupBox_FilterSettings.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox_FilterSettings.Padding = New System.Windows.Forms.Padding(1)
         Me.GroupBox_FilterSettings.Size = New System.Drawing.Size(441, 238)
         Me.GroupBox_FilterSettings.TabIndex = 3
         Me.GroupBox_FilterSettings.TabStop = False
@@ -546,7 +565,7 @@ Partial Class SetupForm
         'Button_ModeDown
         '
         Me.Button_ModeDown.Location = New System.Drawing.Point(19, 135)
-        Me.Button_ModeDown.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Button_ModeDown.Margin = New System.Windows.Forms.Padding(1)
         Me.Button_ModeDown.Name = "Button_ModeDown"
         Me.Button_ModeDown.Size = New System.Drawing.Size(64, 23)
         Me.Button_ModeDown.TabIndex = 4
@@ -556,7 +575,7 @@ Partial Class SetupForm
         'Button_MoveUp
         '
         Me.Button_MoveUp.Location = New System.Drawing.Point(19, 103)
-        Me.Button_MoveUp.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Button_MoveUp.Margin = New System.Windows.Forms.Padding(1)
         Me.Button_MoveUp.Name = "Button_MoveUp"
         Me.Button_MoveUp.Size = New System.Drawing.Size(64, 23)
         Me.Button_MoveUp.TabIndex = 3
@@ -566,7 +585,7 @@ Partial Class SetupForm
         'Button_FilterRemove
         '
         Me.Button_FilterRemove.Location = New System.Drawing.Point(19, 57)
-        Me.Button_FilterRemove.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Button_FilterRemove.Margin = New System.Windows.Forms.Padding(1)
         Me.Button_FilterRemove.Name = "Button_FilterRemove"
         Me.Button_FilterRemove.Size = New System.Drawing.Size(64, 23)
         Me.Button_FilterRemove.TabIndex = 2
@@ -576,7 +595,7 @@ Partial Class SetupForm
         'Button_FilterAdd
         '
         Me.Button_FilterAdd.Location = New System.Drawing.Point(19, 26)
-        Me.Button_FilterAdd.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Button_FilterAdd.Margin = New System.Windows.Forms.Padding(1)
         Me.Button_FilterAdd.Name = "Button_FilterAdd"
         Me.Button_FilterAdd.Size = New System.Drawing.Size(64, 23)
         Me.Button_FilterAdd.TabIndex = 1
@@ -592,7 +611,7 @@ Partial Class SetupForm
         Me.ListView_Filters.FullRowSelect = True
         Me.ListView_Filters.HideSelection = False
         Me.ListView_Filters.Location = New System.Drawing.Point(94, 14)
-        Me.ListView_Filters.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.ListView_Filters.Margin = New System.Windows.Forms.Padding(1)
         Me.ListView_Filters.MultiSelect = False
         Me.ListView_Filters.Name = "ListView_Filters"
         Me.ListView_Filters.Size = New System.Drawing.Size(348, 204)
@@ -626,9 +645,9 @@ Partial Class SetupForm
         Me.GroupBox_OKCancel.Controls.Add(Me.Button_OK)
         Me.GroupBox_OKCancel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox_OKCancel.Location = New System.Drawing.Point(0, 708)
-        Me.GroupBox_OKCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_OKCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox_OKCancel.Name = "GroupBox_OKCancel"
-        Me.GroupBox_OKCancel.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox_OKCancel.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox_OKCancel.Size = New System.Drawing.Size(441, 58)
         Me.GroupBox_OKCancel.TabIndex = 4
         Me.GroupBox_OKCancel.TabStop = False
@@ -636,7 +655,7 @@ Partial Class SetupForm
         'Button_Cancel
         '
         Me.Button_Cancel.Location = New System.Drawing.Point(216, 26)
-        Me.Button_Cancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_Cancel.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_Cancel.Name = "Button_Cancel"
         Me.Button_Cancel.Size = New System.Drawing.Size(79, 23)
         Me.Button_Cancel.TabIndex = 3
@@ -646,31 +665,12 @@ Partial Class SetupForm
         'Button_OK
         '
         Me.Button_OK.Location = New System.Drawing.Point(116, 26)
-        Me.Button_OK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button_OK.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_OK.Name = "Button_OK"
         Me.Button_OK.Size = New System.Drawing.Size(79, 23)
         Me.Button_OK.TabIndex = 2
         Me.Button_OK.Text = "OK"
         Me.Button_OK.UseVisualStyleBackColor = True
-        '
-        'TextBox_CamTimeout
-        '
-        Me.TextBox_CamTimeout.Location = New System.Drawing.Point(117, 174)
-        Me.TextBox_CamTimeout.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox_CamTimeout.Name = "TextBox_CamTimeout"
-        Me.TextBox_CamTimeout.Size = New System.Drawing.Size(62, 20)
-        Me.TextBox_CamTimeout.TabIndex = 12
-        Me.TextBox_CamTimeout.Text = "60"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(32, 177)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(45, 13)
-        Me.Label18.TabIndex = 11
-        Me.Label18.Text = "Timeout"
         '
         'SetupForm
         '
@@ -685,7 +685,7 @@ Partial Class SetupForm
         Me.Controls.Add(Me.GroupBox_MountSettings)
         Me.Controls.Add(Me.GroupBox_GeneralSettings)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "SetupForm"
         Me.Text = "Setup"
