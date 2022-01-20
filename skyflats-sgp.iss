@@ -19,6 +19,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
+OutputDir="."
 OutputBaseFilename="SkyFlats SGP Setup"
 Compression=lzma
 SolidCompression=yes
